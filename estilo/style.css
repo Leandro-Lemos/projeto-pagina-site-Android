@@ -57,23 +57,33 @@ header > p {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.733);
 }
 
-nav {
+nav ul {
     background-color: var(--cordestaque);
+    display: flex;
     padding: 10px;
-    text-align: left;
+    justify-content: left;
+    list-style: none;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.753) ;
 }
 
-nav > a {
+nav ul li {
     color: white;
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
     transition-duration: 0.5s;
-    border-radius: 10px;
+    border-radius: 3px;
+
 
 }
-nav > a:hover {
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color:#ffff
+}
+
+nav ul li:hover {
     background-color:var(--cor01);
     
 }
@@ -177,4 +187,20 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
+}
+
+@media only screen and (max-width: 767px){
+    nav ul {
+        height:180px;
+       
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        width: 120px;
+        text-align: center;
+        margin: auto;
+    }
+    
 }
