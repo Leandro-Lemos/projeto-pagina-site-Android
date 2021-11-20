@@ -189,7 +189,7 @@ footer {
     font-size: 0.9em;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 600px){
     nav ul {
         height:180px;
        
