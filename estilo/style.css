@@ -202,5 +202,21 @@ footer {
         text-align: center;
         margin: auto;
     }
-    
+    main {
+        background-color: white;
+        text-align: justify;
+        padding: 20px;        
+    }
+
+    header > h1 {
+        font-family: var(--fonte-android);
+        color: white;
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.733);
+    }
+
+    aside ul {
+        columns: 1;
+
 }
